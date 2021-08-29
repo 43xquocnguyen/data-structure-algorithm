@@ -1,0 +1,9 @@
+- Tính chất
+    - Tối đa có 2^H Node trên cây chiều cao H
+    - Trong cây có N Node, chiều cao tối thiểu: log(N + 1)
+- Các loại
+    - Full BST: Chỉ có Leaf Node hoặc Node 2 child
+    - Complete BST: Gồm tất cả các node có 2 con và không có con nào
+    - Perfect BST: Hai bên cùng bằng nhau
+- Ứng dụng:
+    - Tổ chức dữ liệu có phân cấp

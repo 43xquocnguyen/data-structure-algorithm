@@ -1,0 +1,10 @@
+Tối ưu: Khi chia bài toán thành các bài toán con có kích thước gần bằng nhau
+- Chia bài toán thành các bài toán con nhỏ hơn
+
+Các bài toán chia để trị: 
+ - Tính lũy thừa
+ - Quick Sort (Sort Algorithms)
+ - Merge Sort (Sort Algorithms)
+ - Binary Search (Search Algorithms)
+ - Nhân ma trận của Strassen
+ - ...

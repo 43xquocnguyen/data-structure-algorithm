@@ -1,0 +1,11 @@
+- Các dạng biểu diễn đồ thị:
+    + Ma trận trọng số
+        + Delete Egde: O(1)
+        + Add Egde: O(V^2)
+        + Memory: (V^2)
+    + Ma trận kề
+        + Delete Egde: O(V^2)
+        + Add Egde: O(1)
+        + Memory: (V)
+    + Tập cạnh
+    

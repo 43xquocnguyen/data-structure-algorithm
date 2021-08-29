@@ -1,0 +1,5 @@
+- Tìm cận trên hoặc cận dưới để bỏ đi để chọn giải pháp tối ưu
+
+Các bài toán nhánh cận: 
+ - Bài toán xếp đồ vào balo (cận trên) 
+ - 

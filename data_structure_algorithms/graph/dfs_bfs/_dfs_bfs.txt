@@ -1,0 +1,14 @@
+- DFS & BFS: Thuật toán tìm đường đi đến 1 đỉnh
+    + DFS: Duyệt qua những đỉnh xa source nhất (Có thể chưa ngắn nhất)
+    + BFS: Duyệt qua những đỉnh gần nhất (cùng mức) (Có thể ngắn nhất)
+
+- Cả 2 thuật toán chỉ duyệt trên đồ thị không trọng số
+
+- Ứng dụng của DFS & BFS:
+    + Detecting cycle in a graph (Tìm chu trình)
+    + Path finding (Giải thuật tìm đường đi)
+    + Detecting cycle in a graph (Tìm chu trình)
+    + Topological Sorting 
+    + To test if a graph is bipartite 
+    + Finding Strongly Connected Components of a graph A directed graph is called strongly connected if there is a path from each vertex in the graph to every other vertex.
+    + Solving puzzles with only one solution, such as mazes

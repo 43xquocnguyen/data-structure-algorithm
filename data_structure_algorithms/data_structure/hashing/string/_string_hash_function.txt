@@ -1,0 +1,12 @@
+- Character Sum Method:
+
+    h(k) = (k[0] + k[1] + .. + k[n - 1]) % n
+
+- Polynomial rolling hash function:
+
+    * P là số nguyên tố
+    h(k) = (k[0] * P^0 + k[1] * P^1 + ... + k[n - 1] * P^(n-1)) % n
+    
+- Foding Method
+
+- Prime 31

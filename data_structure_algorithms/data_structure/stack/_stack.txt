@@ -1,0 +1,7 @@
+- LIFO (Last In First Out)
+- Ứng dụng
+    - Khử đệ quy
+    - Chuyển infix sang postfix 
+    - Chuyển infix sang prefix
+    - Kiểm tra dãy ngoặc đúng
+

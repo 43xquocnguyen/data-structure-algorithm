@@ -1,0 +1,10 @@
+- Giải thuật tham lam (Greedy): Lựa chọn các hướng đi tối ưu nhất ở thời điểm hiện tại
+
+Các bài toán giải thuật tham lam:
+ - Giải thuật cây khung nhỏ nhất của Prim (Spanning Tree)
+ - Giải thuật cây khung nhỏ nhất của Kruskal (Spanning Tree)
+ - Giải thuật đường đi ngắn nhất của Dijkstra (Shortest Path)
+ - Bài toán hành trình người bán hàng
+ - Bài toán xếp lịch công việc
+ - Bài toán xếp ba lô
+ - ...

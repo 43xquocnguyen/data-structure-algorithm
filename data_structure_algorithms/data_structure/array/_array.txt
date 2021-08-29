@@ -1,0 +1,3 @@
+- Delete 1 element: O(n)
+- Add 1 element: O(n)
+- Asscess 1 element: O(1)

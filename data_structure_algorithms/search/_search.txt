@@ -1,0 +1,35 @@
+HÊ HÊ ĐÂY LÀ SEARCH: 
+ - Linear Search 
+ - Binary Search 
+
+ - Jump Search 
+ - Interpolation Search 
+ - Ternary Search
+ - Exponential Search 
+
+// -------------------------------------------------------------- //
+
+-------------------------- Linear Search --------------------------- 
+
+  + Ý tưởng: Xuất phát từ vị trị đầu của mảng A so sánh phần tử cần
+tìm với tất cả các phần tử có trong mảng hoặc danh sách cần tìm. Chạy
+từ phần tử đầu đến cuối và so sánh từng đôi một, nếu bằng thì thông báo
+có, ngược lại nếu đã đi hết dãy mà vẫn chưa có phần tử nào thõa mãn thì
+cho kết quả là không tìm thấy.
+
+  + Độ phức tạp: O(n)	
+
+-------------------------- Binary Search --------------------------- 
+
+  + Ý tưởng: Phân hoạch mảng ra làm 2 phần: 1 phần chắc chắn có thể có
+và 1 phần chắc chắn không có. Quá trình tìm kiếm sẽ thu hẹp, nên việc
+tìm kiếm sẽ nhanh chóng. Điều kiện cho giải thuật này cần phải có một
+quan hệ thứ tự nào đó trong dãy.
+
+  + Độ phức tạp: O(log2(n))
+
+-------------------------- Tìm kiếm nội suy --------------------------- 
+
+  + Ý tưởng: 
+
+  + Độ phức tạp: O(log(log2(n))) hoặc O(n)

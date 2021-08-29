@@ -1,0 +1,7 @@
+- Các thuật toán shortest path:
+    + Dijkstra: Nguồn đơn, trọng số không âm. Độ phức tạp không tăng
+    + Bellman-Ford: Nguồn đơn, trọng số có thể âm
+    + Floyd-Warshall: Nguồn đa, trọng số không âm (Hiệu quả đồ thị nhiều cặp cạnh)
+    + Johnson: Nguồn đa, (Hiệu quả đồ thị thưa)
+    + A*: Nguồn đơn, sử dụng heuristics để tăng tốc độ thuật toán
+    

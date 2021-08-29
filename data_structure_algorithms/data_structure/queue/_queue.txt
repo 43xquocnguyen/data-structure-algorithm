@@ -1,0 +1,5 @@
+- FIFO (First In First Out)
+- Ứng dụng
+    - Thuật toán Breadth First Search không đệ quy
+    - Bộ đệm, chứa các yêu cầu cần xử lí theo thứ tự vào trước thì xử lí trước (Priority Queue)
+

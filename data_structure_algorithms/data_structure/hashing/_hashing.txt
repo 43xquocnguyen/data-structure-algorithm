@@ -1,0 +1,6 @@
+- Xử lí đụng độ (Handle collison):
+    - Separate chaining (Nối dài)
+    - Open address (dò tuyến tính & dò bậc k)
+    - Double hashing (băm lại)
+- Ứng dụng:
+    - Hash password,...

@@ -1,0 +1,9 @@
+ - Giải thuật quay lui (Backtracking): Dùng để giải bài toán liệt kê các cấu hình. 
+Mỗi cấu hình được xây dựng bằng từng phần tử. 
+Mỗi phần tử lại được chọn bằng cách thử tất cả các khả năng. (Bản chất là DFS)
+
+Các bài toán giải thuật quay lui:
+ - In tất cả hoán vị của 1 string
+ - Game Sudoku
+ - Bài toán 8 hậu
+ - ...

@@ -1,0 +1,15 @@
+Thuộc tính cây khung:
+
+    - Một Grahp G tuần hoàn có thể có nhiều hơn một cây khung.
+    - Tất cả các cây khung của một Graph G đều có cùng số cạnh và số đỉnh.
+    - Cây khung không có bất kỳ vòng tuần hoàn nào.
+    - Việc xóa một cạnh từ cây khung sẽ làm cho Grahp là không tuần hoàn.
+    - Thêm một cạnh vào cây khung sẽ tạo nên một vòng tuần hoàn.
+    - Cây khung có n-1 cạnh, trong đó n là số nút (đỉnh).
+
+Ứng dụng:
+
+    - Lập kế hoạch mạng dân sự.
+    - Giao thức định tuyến mạng máy tính.
+    - Cluster Analysis.
+

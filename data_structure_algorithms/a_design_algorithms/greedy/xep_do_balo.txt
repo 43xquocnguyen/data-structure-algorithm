@@ -1,0 +1,8 @@
+* ------------ Bài toán xếp balo ------------:
+Trọng lượng của balo: 37
+Số lượng đồ vật: 4
+Trọng lượng | Giá trị | Tên đồ vật
+    15      |   30    | Gao mot luc
+    10      |   25    | Nep hoa cai 
+     2      |    2    | Gao nang huong
+     4      |    6    | Gao tai nguyen

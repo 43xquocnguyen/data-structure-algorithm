@@ -1,0 +1,92 @@
+- Basic Sort: 
+
+   +  Interchange Sort
+   +  Bubble Sort
+   +  Shaker Sort
+   +  Insertion Sort
+   +  Binary Insertion Sort
+   +  Selection Sort
+
+- Advance Sort:
+
+   +  Shell Sort
+   +  Heap Sort
+   +  Quick Sort
+   +  Merge Sort
+   +  Radix Sort
+
+- Orther Sort: 
+
+   +  Bucket Sort
+   +  Counting Sort
+   +  Comb Sort
+   +  Flash Sort (no)
+   +  Gnome Sort
+   +  Tim Sort (no)
+   +  Pigeonhole Sort
+
+   
+   +  Smooth Sort
+   +  Cube Sort
+   +  Shear Sort
+
+// ----------------------------------------------------------------- //
+
+-------------------------- Interchange Sort --------------------------- 
+
+  + Ý tưởng: Để sắp xếp một dãy số, ta có thể xét các nghịch thế có trong
+dãy và triệt tiêu dần chúng đi. Ý tưởng chính của giải thuật là xuất phát
+từ đầu dãy, tìm tất cả nghịch thế chứa phần tử này, triệt tiêu chúng bằn
+cách đổi chổ phần tử này với phần tử tương ứng trong cặp nghịch thế. Lặp
+lại xử lý trên với các phần tử kế tiếp theo trong dãy.
+
+  + Độ phức tạp: O(n^2)
+
+----------------------------- Bubble Sort ------------------------------
+
+  + Ý tưởng: Ý chính của thuật toán là xuất phát từ cuối (hoặc đầu) dãy,
+đổi chổ các cặp phần tử kế cận để đưa phần tử nhỏ (lớn) hơn trong cặp
+phần tử đó về vị trí đúng đầu (cuối) dãy hiện hành, sau đó sẽ không xét
+đến nó ở vị trí tiếp theo, do vậy ở lần xử lý thứ i sẽ có vị trí đầu dãy
+là i. Lặp lại xử lý trên cho đến khi không còn cặp phần tử nào để xét.
+
+  + Độ phức tạp: O(n^2)
+
+----------------------------- Shaker Sort ------------------------------
+
+  + Ý tưởng: Dựa trên Bubble Sort để cải tiến. Lượt đi: đẩy phần tử nhỏ
+về đầu mảng; Lượt về: đẩy phần tử lớn về cuối mảng
+
+  + Độ phức tạp: O(n^2)
+
+---------------------------- Insertion Sort -----------------------------
+
+  + Ý tưởng: Xét danh sách con gồm k phần tử đầu a1 … ak. Với k = 1, danh
+sách gồm một phần tử đã được sắp xếp thành mảng tăng dần. Giả sử trong
+danh sách k - 1 phần tử đầu a1 … ak - 1 đã được sắp xếp - Để sắp xếp phần
+tử ak = x, tìm vị trí thích hợp của nó trong mảng a1 … ak - 1. Vị trí thích
+hợp cần tìm là vị trí đứng trước phần tử lớn hơn nó và sau phần tử nhỏ hơn
+hoặc bằng nó.
+
+  + Độ phức tạp: O(n^2)
+
+---------------------------- Selection Sort -----------------------------
+
+  + Ý tưởng: Selection sort sắp xếp một mảng bằng cách đi tìm phần tử có giá
+trị nhỏ nhất(giả sử với sắp xếp mảng tăng dần) trong đoạn đoạn chưa được
+sắp xếp và đổi cho phần tử nhỏ nhất đó với phần tử ở đầu đoạn chưa được sắp
+xếp(không phải đầu mảng). Thuật toán sẽ chia mảng làm 2 mảng con. Một mảng 
+con đã được sắp xếp và một mảng chưa được sắp xếp. Tại mỗi bước lặp của thuật
+toán, phần tử nhỏ nhất ở mảng con chưa được sắp xếp sẽ được di chuyển về đoạn
+đã sắp xếp.
+
+  + Độ phức tạp: O(n^2)
+
+---------------------------- Binary Insertion Sort -----------------------------
+
+  + Ý tưởng: BInsertion Sort cũng tương tự như Insertion Sort, chỉ khác ở cách
+tìm vị trí thích hợp pos trong đoạn a[0] đến a[i-1]. Do đoạn a[0] đến a[i-1]
+đã có thứ tự nên ta có thể sử dụng giải thuật tìm nhị phân (Binary Search) để
+thực hiện việc tìm vị trí pos.
+
+

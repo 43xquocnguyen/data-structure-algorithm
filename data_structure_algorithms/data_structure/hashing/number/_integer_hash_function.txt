@@ -1,0 +1,184 @@
+I. Phần 1:
+
+    - Direct Method: 
+    
+        h(k) = k
+
+    - Subtraction Method:
+
+        h(k) = c - k
+
+    - Division Method:
+
+        h(k) = k % n
+
+    - Mid Square Number:
+
+        h(k) = middle digit of (key)^2
+
+        VD: n = 100, key = 25
+
+            n = 100 => digit = 2
+            key * key = 2500
+            => Mid square number = 50 (Lấy số ở giữa đủ 2 chữ số)
+
+    - Folding Method (a, b, c là chia số ra thành nhiều phần)
+
+        h(k) = a + b + c + ... 
+        
+        VD: nshift = 2, key = 123456
+
+            +> Folding Shift:
+
+                => a = 12, b = 45, c = 56
+                => h(k) = (12 + 45 + 56) % n
+
+            +> Folding Boundary:
+
+                => a = 21, b = 45, c = 65   
+                => h(k) = (21 + 45 + 65) % n
+
+    - Rotation Method:
+
+        h(123456) = 612345 % n
+
+    - Pseudorandom Method:
+
+        
+
+    - Knuth's Multiplikeyative Method 
+
+        * with constant A(0 < A < 1):
+        h(k) = floor(n * (k * A - (k * A mod 1))) // mod 1 là lấy phần thập phân
+
+    - Fibonaci hashing & Golden Ratio:
+
+        - Sử dụng multiplication với A là golden ratio (Tỉ lệ vàng)
+
+        h(k) = floor(n * (k * φ - (k * φ mod 1))) // mod 1 là lấy phần thập phân
+
+            Có:     x / y = (x + y) / x
+                =>  x^2 - x * y - y^2 = 0
+                =>  φ^2 - φ - 1 = 0
+                =>  φ = (1 + sqrt(5)) / 2
+                =>  φ = 1.618033887
+                φ là Golden ratio (Tỉ lệ vàng)
+
+            Mối quan hệ fibonaci & φ:
+
+                φ = F(n) / F(n - 1)
+
+                F(n) = (1 / sqrt(5)) * (φ^n - (-φ^(-n))) 
+                => φ = (1 / sqrt(5)) / 2
+
+II. Phần 2:
+
+    - Robert Jenkins' 96 bit Mix Funkeytion
+
+        +> Input: 96 bit
+        +> Output: 32 bit
+
+        Java: int -> C: uint32_t
+        Java: long -> C: uint64_t
+
+        int hash96shift(int a, int b, int key)
+        {
+            a = a - b;
+            a = a - key;
+            a = a ^ (key >>> 13);
+            b = b - key;
+            b = b - a;
+            b = b ^ (a << 8);
+            key = key - a;
+            key = key - b;
+            key = key ^ (b >>> 13);
+            a = a - b;
+            a = a - key;
+            a = a ^ (key >>> 12);
+            b = b - key;
+            b = b - a;
+            b = b ^ (a << 16);
+            key = key - a;
+            key = key - b;
+            key = key ^ (b >>> 5);
+            a = a - b;
+            a = a - key;
+            a = a ^ (key >>> 3);
+            b = b - key;
+            b = b - a;
+            b = b ^ (a << 10);
+            key = key - a;
+            key = key - b;
+            key = key ^ (b >>> 15);
+            return key;
+        }
+
+    - Robert Jenkins' 32 bit integer hash function:
+
+        uint32_t hash(uint32_t a)
+        {
+            a = (a + 0x7ed55d16) + (a << 12);
+            a = (a ^ 0xc761c23c) ^ (a >> 19);
+            a = (a + 0x165667b1) + (a << 5);
+            a = (a + 0xd3a2646c) ^ (a << 9);
+            a = (a + 0xfd7046c5) + (a << 3);
+            a = (a ^ 0xb55a4f09) ^ (a >> 16);
+            return a;
+        }
+
+    - 32 bit Mix Functions:
+
+        +> (~x) + y tương đương với y - x - 1 trong phần bù 2
+
+        int hash32shift(int key)
+        {
+            key = ~key + (key << 15); // key = (key << 15) - key - 1;
+            key = key ^ (key >>> 12);
+            key = key + (key << 2);
+            key = key ^ (key >>> 4);
+            key = key * 2057; // key = (key + (key << 3)) + (key << 11);
+            key = key ^ (key >>> 16);
+            return key;
+        }
+
+    - Using Multiplication for Hashing:
+
+        int hash32shiftmult(int key)
+        {
+            int c2=0x27d4eb2d; // a prime or an odd constant
+            key = (key ^ 61) ^ (key >>> 16);
+            key = key + (key << 3);
+            key = key ^ (key >>> 4);
+            key = key * c2;
+            key = key ^ (key >>> 15);
+            return key;
+        }
+
+    - 64 bit Mix Functions:
+
+        long hash64shift(long key)
+        {
+            key = (~key) + (key << 21); // key = (key << 21) - key - 1;
+            key = key ^ (key >>> 24);
+            key = (key + (key << 3)) + (key << 8); // key * 265
+            key = key ^ (key >>> 14);
+            key = (key + (key << 2)) + (key << 4); // key * 21
+            key = key ^ (key >>> 28);
+            key = key + (key << 31);
+            return key;
+        }
+
+    - 64 bit to 32 bit Hash Functions:
+
+        public int hash6432shift(long key)
+        {
+            key = (~key) + (key << 18); // key = (key << 18) - key - 1;
+            key = key ^ (key >>> 31);
+            key = key * 21; // key = (key + (key << 2)) + (key << 4);
+            key = key ^ (key >>> 11);
+            key = key + (key << 6);
+            key = key ^ (key >>> 22);
+            return (int) key;
+        }
+
+    Nguồn: http://web.archive.org/web/20071223173210/http://www.concentric.net/~Ttwang/tech/inthash.htm

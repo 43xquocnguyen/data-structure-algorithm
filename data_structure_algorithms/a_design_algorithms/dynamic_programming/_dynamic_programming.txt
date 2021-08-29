@@ -1,0 +1,10 @@
+- Tận dụng lại các kết quả của các bài toán con trước đó, tránh ra kết quả tương tự
+
+Các bài toán quy hoạch động:
+ - Bài toán ba lô
+ - Dãy Fibonacci
+ - Bài toán tháp Hà Nội
+ - Heap Sort (Sort Algorithms)
+ - Giải thuật đường đi ngắn nhất của Floyd Warshall (Shortest Path)
+ - Giải thuật đường đi ngắn nhất của Bellman–Ford (Shortest Path)
+ - ... 
